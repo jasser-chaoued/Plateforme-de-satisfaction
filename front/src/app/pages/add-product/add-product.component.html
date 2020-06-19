@@ -1,0 +1,38 @@
+
+    <div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+      <div class="container-fluid">
+        <div class="header-body">
+          <!-- Card stats -->
+          <div class="row">
+            
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="card-body">
+      <form class="user-profile"   [formGroup]="addProductForm" (ngSubmit)="addProduct()">
+          <div class="row">
+              <h2>ADD A PRODUCT TO THE SURVEY</h2>
+          </div>
+          <div class="row">
+             
+          </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="form-group">
+                    <label>Product Name</label>
+                    <input type="text" class="form-control" formControlName="product_name" placeholder="Enter product name" >
+                  </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="form-group">
+                    <label>reference </label>
+                    <input type="text" class="form-control" formControlName="reference" placeholder="Enter reference" >
+                  </div>
+              </div>
+          </div>
+          <button type="submit" class="btn btn-info">add Product</button>
+      </form>
+  </div>

@@ -1,0 +1,41 @@
+
+    <div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+        <div class="container-fluid">
+          <div class="header-body">
+            <!-- Card stats -->
+            <div class="row">
+              
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <form class="user-profile"   [formGroup]="addServiceForm" (ngSubmit)="addService()">
+            <div class="row">
+                <h2>ADD A PRODUCT TO THE SURVEY</h2>
+            </div>
+            <div class="row">
+               
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                      <label>Service Name</label>
+                      <input type="text" class="form-control" formControlName="typeDeService" placeholder="Name of service" >
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                      <label>Department </label>
+                      <input type="text" class="form-control" formControlName="Department" placeholder="Carrefour" >
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-info">add Product</button>
+        </form>
+    </div>

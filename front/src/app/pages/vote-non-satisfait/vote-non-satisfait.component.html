@@ -1,0 +1,33 @@
+<div class="header bg-gradient-danger pb-8 pt-5 pt-md-8">
+    <div class="container-fluid">
+      <div class="header-body">
+        <!-- Card stats -->
+        <div class="row">
+          
+        </div>
+      </div>
+    </div>
+</div>
+<div class="card-body">
+    <form  class="post-nonSatisfait" [formGroup]="PostForm" (ngSubmit)="AddPost()">
+        <div class="row" >
+            <h2>Here you can give us more details about your unsatisfaction </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <input type="text" class="form-control" formControlName="product_name">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Your Message</label>
+                    <textarea rows="4" cols="80" class="form-control" formControlName="message" placeholder="Text us here..."></textarea>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-info">Submit</button>
+    </form>
+</div>
